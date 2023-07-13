@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+
+		}
+		body.night
+		{
+			background: #00151f;
+			transition:0.5s;
+		}
+		.toggle
+		{
+			position: absolute;
+			top: 40px;
+			right: 50px;
+			background:#fff;
+			border:2px solid #00151f;
+			width: 45px;
+			height: 20px;
+			cursor: pointer;
+			border-radius: 20px;
+			transition: 0.5s;
+		}
+		.toggle.active
+		{
+			background:#00151f;
+
+			border:2px solid #fff;
+		}
+		.toggle:before
+		{
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			width: 16px;
+			height: 16px;
+			background:#00151f;
+			border-radius: 50%;
+			transition: 0.5s;
+
+		}
+
+		.toggle.active:before
+		{
+			left: 27px;
+			background: #fff;
+		}
+		.contant
+		{
+			margin:100px auto;
+			width: 1000px;
+		}
+		.contant h1
+		{
+			margin: 0 0 20px;
+			padding: 0;
+			color: #000;
+			transition:0.5s;
+			
+		}
+		.contant p
+		{
+			margin: 0 0 20px;
+			padding: 0;
+			color: #000;
+			transition:0.5s;
+			font-size: 18px;
+		}
+
+		body.night .contant h1,
+		body.night .contant p
+		{
+			color: #fff
+		}
+	</style>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+				$('body').toggleClass('night')
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="contant">
+		<h1>This is my first night mode</h1>
+		<p>
+		Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.</p>
+<p>
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.</p>
+
+
+	</div>
+<div class="toggle">
+	
+</div>
+</body>
+</html>
